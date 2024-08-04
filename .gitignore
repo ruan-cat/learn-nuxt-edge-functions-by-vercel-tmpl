@@ -11,3 +11,5 @@ dist
 
 pnpm-lock.yaml
 
+
+.vercel
