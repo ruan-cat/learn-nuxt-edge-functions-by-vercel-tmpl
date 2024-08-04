@@ -1,6 +1,11 @@
 <script setup lang="ts">
-const { data: info } = await useFetch('/api/info')
-const generatedAt = useState(() => new Date().toISOString())
+const { data: info } = await useFetch("/api/info");
+
+const hello = await useFetch("/api/hello");
+
+console.log(" 写了一个简单的自定义接口，返回数据 ", hello);
+
+const generatedAt = useState(() => new Date().toISOString());
 </script>
 
 <template>
@@ -94,8 +99,8 @@ body {
   --bg: white;
   --primary: #00dc82;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
-    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   background: var(--bg);
   color: var(--fg);
 }
