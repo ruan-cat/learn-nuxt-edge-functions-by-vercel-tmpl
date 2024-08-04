@@ -1,7 +1,8 @@
 {
   "private": true,
+  "packageManager": "pnpm@8.15.8",
   "scripts": {
-    "build": "NITRO_PRESET=vercel-edge nuxt build",
+    "build": "nuxt build",
     "dev": "nuxt dev"
   },
   "devDependencies": {
